@@ -1,0 +1,6 @@
+<%= simple_form_for(a_restaurant) do |form| %>
+	<%= form.input :name, placeholder: 'Type a name' %>
+	<%= form.input :rating, value: 0 %>
+	<%= form.input :address, placeholder: 'Type an address' %>
+	<%= form.submit action_name == 'new' ? 'save restaurant' : 'edit restaurant', class: 'btn btn-primary' %>
+<% end %>
